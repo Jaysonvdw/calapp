@@ -1,0 +1,92 @@
+<template name="landing">
+
+ <head>
+  <link rel="shortcut icon" href="favicon.ico">
+
+	<title>HICrewBoss - Sound and Lighting Crew Management</title>
+  </head>
+ <body>
+
+
+ <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{{pathFor 'landing'}}">CrewBoss</a>
+            </div>
+
+
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+
+				   <li>
+                        <a href="{{pathFor 'dashboard'}}">Dashboard</a>
+                    </li>
+
+
+
+                </ul>
+
+
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+		</div>
+		{{> loginButtons}}
+    </nav>
+
+ <div class="col-md-12 column">
+	<div class="row text-center">
+	<img src="/vl.jpg" alt="Logo" style="width:304px;height:100px" class="img-responsive center-block" vspace="10">
+	</div>
+
+				<h1 class="text-primary text-center">
+					Welcome to CrewBoss
+				</h1>
+				<h4 class="text-primary text-center">
+					Your complete Sound and Lighting Crew Logistical Management System... Live and in the Cloud
+				</h4>
+				<div id="myCarousel" class="carousel slide"><!-- Indicators --><ol class="carousel-indicators"><li data-target="#myCarousel" data-slide-to="0" class="active"></li><li data-target="#myCarousel" data-slide-to="1"></li><li data-target="#myCarousel" data-slide-to="2"></li></ol><div class="carousel-inner"><div class="item active"><img src="http://i.imgur.com/yTXa74a.jpg" title="source: imgur.com" style="width:790px;height:340px" /><div class="container"><div class="carousel-caption"><h2>Demo Text</h2><p></p></div></div></div><div class="item"><img src="http://i.imgur.com/IYqXPW9.jpg" title="source: imgur.com" style="width:790px;height:340px"/>><div class="container"><div class="carousel-caption"><h2>Demo Text</h2><p></p></div></div></div><div class="item"><img src="http://i.imgur.com/TUtYnJj.jpg" title="source: imgur.com" style="width:790px;height:340px"/><div class="container"><div class="carousel-caption"><h2>Demo Text</h2><p></p></div></div></div></div><!-- /.carousel-inner --><!-- Controls --><a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a><a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a></div>
+
+		<h2 class="text-primary text-center">
+		Watch the video below to see how it works...
+		</h2>
+			<h2 class="text-primary text-center">
+			<div class="responsive-container">
+					<iframe src="//player.vimeo.com/video/46926279" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/46926279"> </a> <a href="https://vimeo.com/user12118272"> </a> <a href="https://vimeo.com"> </a></p>
+				</div>
+				</h2>
+
+
+
+   <div id="wrap">
+  <div id="main" class="container clear-top">
+    <p></p>
+  </div>
+</div>
+</div>
+
+</body>
+
+ <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+
+                    </ul>
+                    <p class="copyright text-muted text-center">Copyright &copy; CrewBoss 2015</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</template>
